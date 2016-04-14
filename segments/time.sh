@@ -18,6 +18,7 @@ __process_settings() {
 
 run_segment() {
         __process_settings
-	date +"$TMUX_POWERLINE_SEG_TIME_FORMAT"
+        echo "Charlotte:" $(TZ=America/New_York date +"$TMUX_POWERLINE_SEG_TIME_FORMAT") ":: Berlim:" $(TZ=Europe/Berlin date +"$TMUX_POWERLINE_SEG_TIME_FORMAT")
+        
 	return 0
 }
