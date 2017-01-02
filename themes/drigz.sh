@@ -23,14 +23,15 @@ TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SE
 
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
-		#"tmux_session_info 148 234" \
-		#"hostname 33 0" \
+    #"tmux_session_info 148 234" \
+    "hostname 33 0" \
 		#"ifstat 30 255" \
 		#"ifstat_sys 30 255" \
-		"lan_ip 32 255 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
-		"wan_ip 32 255" \
-		#"vcs_branch 29 88" \
+		#"lan_ip 32 255 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
+		#"wan_ip 32 255" \
+    #"vcs_branch 29 88" \
 		#"vcs_compare 60 255" \
+    #"rainbarf 0 ${TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR}" \
 		#"vcs_staged 64 255" \
 		#"vcs_modified 9 255" \
 		#"vcs_others 245 0" \
