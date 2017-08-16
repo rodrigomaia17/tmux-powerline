@@ -63,10 +63,7 @@ __battery_osx() {
           export fully_charged=$value;;
 			esac
 			if [[ -n $maxcap && -n $curcap && -n $extconnect ]]; then
-				if [[ "$curcap" == "$maxcap" || "$fully_charged" == "Yes" && $extconnect == "Yes"  ]]; then
-					return
-				fi
-				charge=`pmset -g batt | grep -o "[0-9][0-9]*\%" | rev | cut -c 2- | rev`
+        charge=$(( 100 * $curcap / $maxcap ))
 				if [[ "$extconnect" == "Yes" ]]; then
 					echo "$charge"
 				else
