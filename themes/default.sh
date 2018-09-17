@@ -19,39 +19,12 @@ TMUX_POWERLINE_DEFAULT_LEFTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_LEFTSIDE_SEPA
 TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SEPARATOR:-$TMUX_POWERLINE_SEPARATOR_LEFT_BOLD}
 
 
-#https://gist.github.com/pyro2927/4942519
-
-#background tones
-BASE03="16" #actually closer to 17, but 16 looks better
-BASE02="236"
-#content tones
-BASE01="60"
-BASE00="66"
-BASE0="102"
-BASE1="109"
-#background tones
-BASE2="224"
-BASE3="230"
-
-#accent colors
-YELLOW="136"
-ORANGE="166"
-RED="166"
-MAGENTA="163"
-VIOLET="62"
-BLUE="32"
-CYAN="36"
-GREEN="100"
-
-WHITE="255"
-GMAIL_RED="196"
-
 # Format: segment_name background_color foreground_color [non_default_separator]
 
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
     #"tmux_session_info 148 234" \
-    "battery ${BASE03} ${YELLOW}" \
+    "battery 32 255" \
     #"hostname 33 0" \
 		#"ifstat 30 255" \
 		#"ifstat_sys 30 255" \
@@ -63,7 +36,7 @@ if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 		#"vcs_staged 64 255" \
 		#"vcs_modified 9 255" \
 		#"vcs_others 245 0" \
-		    "now_playing ${BASE3} ${MAGENTA}" \
+		"now_playing 242 255" \
 	)
 fi
 
@@ -81,7 +54,7 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 		#"xkb_layout 125 117" \
 		#"date_day 235 136" \
 		#"date 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-		"time ${BASE3} ${YELLOW} " \
+		"time 55 255 " \
 		#"utc_time 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 	)
 fi
