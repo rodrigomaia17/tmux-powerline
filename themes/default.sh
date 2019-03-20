@@ -28,7 +28,7 @@ if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
     #"hostname 33 0" \
 		#"ifstat 30 255" \
 		#"ifstat_sys 30 255" \
-		"lan_ip 55 255 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
+		"lan_ip 236 141 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
 		#"wan_ip 32 255" \
     #"vcs_branch 29 88" \
 		#"vcs_compare 60 255" \
@@ -36,7 +36,7 @@ if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 		#"vcs_staged 64 255" \
 		#"vcs_modified 9 255" \
 		#"vcs_others 245 0" \
-		"now_playing 242 255" \
+		"now_playing 61 255" \
 	)
 fi
 
