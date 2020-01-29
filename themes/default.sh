@@ -24,11 +24,13 @@ TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SE
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
     #"tmux_session_info 148 234" \
-    "battery 32 255" \
+    "battery 55 255" \
     #"hostname 33 0" \
 		#"ifstat 30 255" \
 		#"ifstat_sys 30 255" \
-		"lan_ip 236 141 ${TMUX_POWERLINE_SEPARATOR_RIGHT_BOLD}" \
+    "disk_usage 55 255 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
+    "disk_usage_home 55 255" \
+    "uptime 61 255" \
 		#"wan_ip 32 255" \
     #"vcs_branch 29 88" \
 		#"vcs_compare 60 255" \
@@ -36,7 +38,7 @@ if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 		#"vcs_staged 64 255" \
 		#"vcs_modified 9 255" \
 		#"vcs_others 245 0" \
-		"now_playing 61 255" \
+		"now_playing 32 255" \
 	)
 fi
 
@@ -46,10 +48,10 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 		#"pwd 89 211" \
 		#"mailcount 9 255" \
     #"cpu 240 136" \
-    #"load 237 167" \
-    #"tmux_mem_cpu_load 234 136" \
+    "load 32 255" \
+    #"tmux_mem_cpu_load 234 255" \
     #"battery 32 255" \
-    "weather 37 255" \
+    #"weather 37 255" \
     #"rainbarf 0 ${TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR}" \
 		#"xkb_layout 125 117" \
 		#"date_day 235 136" \
