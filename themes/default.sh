@@ -28,9 +28,9 @@ if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
     #"hostname 33 0" \
 		#"ifstat 30 255" \
 		#"ifstat_sys 30 255" \
-    "disk_usage 55 255 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
-    "disk_usage_home 55 255" \
-    "uptime 61 255" \
+    #"disk_usage 55 255 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
+    #"disk_usage_home 55 255" \
+    #"uptime 61 255" \
 		#"wan_ip 32 255" \
     #"vcs_branch 29 88" \
 		#"vcs_compare 60 255" \
